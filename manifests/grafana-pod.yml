@@ -11,7 +11,7 @@ spec:
   - image: grafana/grafana:8.4.4
     name: grafana
     ports:
-      containerPort: 3000
+      - containerPort: 3000
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
