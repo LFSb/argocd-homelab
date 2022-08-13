@@ -14,8 +14,8 @@ metadata:
 spec:
   type: NodePort
   selector:
-    matchLabels:
-      run: grafana
+    run: grafana
+    tier: frontend
   ports:
     - protocol: TCP
       port: 3000
@@ -28,6 +28,7 @@ metadata:
   creationTimestamp: null
   labels:
     run: grafana
+    tier: frontend
   name: grafana
   namespace: homeassistant
 spec:
